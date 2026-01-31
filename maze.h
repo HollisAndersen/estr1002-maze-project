@@ -42,4 +42,4 @@ void move_player(Direction d);
 void update_spikes();
 void handle_mouse_click(int mx, int my, int offset_y, int offset_x);
 
-#endif //MAZE_GAME_MAZE_H
+#endif // MAZE_GAME_MAZE_H

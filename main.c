@@ -22,12 +22,14 @@ int main(void)
             if (input_ch == 'w' || input_ch == 'W')
             {
                 menu_selection--;
-                if (menu_selection < 0) menu_selection = 2;
+                if (menu_selection < 0)
+                    menu_selection = 2;
             }
             else if (input_ch == 's' || input_ch == 'S')
             {
                 menu_selection++;
-                if (menu_selection > 2) menu_selection = 0;
+                if (menu_selection > 2)
+                    menu_selection = 0;
             }
             else if (input_ch == '\n' || input_ch == KEY_ENTER)
             {
@@ -83,15 +85,18 @@ int main(void)
                             int x1 = view_x0 + view_w * 2;
                             int y0 = view_y0 + view_hud;
                             int y1 = y0 + view_h;
-                            if (event.x >= view_x0 && event.x < x1 && event.y >= y0 && event.y < y1)
+                            if (event.x >= view_x0 && event.x < x1 && event.y >= y0 &&
+                                event.y < y1)
                             {
-                                handle_mouse_click(event.x - view_x0, event.y - y0, view_start_y, view_start_x);
+                                handle_mouse_click(event.x - view_x0, event.y - y0,
+                                                   view_start_y, view_start_x);
                             }
                         }
                     }
                 }
             }
-            if (status == GAME_START) update_spikes();
+            if (status == GAME_START)
+                update_spikes();
         }
 
         if (status == GAME_OVER || status == GAME_WIN)

@@ -3,7 +3,7 @@
 
 #include <ncurses.h>
 
-extern WINDOW* win;
+extern WINDOW *win;
 
 extern int view_x0;
 extern int view_y0;
@@ -18,4 +18,4 @@ void title_screen();
 void print_maze();
 void game_end_screen(int win);
 
-#endif //MAZE_GAME_UI_H
+#endif // MAZE_GAME_UI_H

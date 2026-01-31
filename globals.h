@@ -14,4 +14,4 @@ extern int limit_sight;
 extern int player_has_key;
 extern int powerups;
 
-#endif //MAZE_GAME_GLOBALS_H
+#endif // MAZE_GAME_GLOBALS_H
